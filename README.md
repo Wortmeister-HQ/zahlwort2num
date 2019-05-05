@@ -1,10 +1,11 @@
 # zahlwort2num
 
+:de: :de: :de:
 A small but useful (due shortage of/low quality support for lang_DE) package for handy convertion of german numerals (also ordinal) written as words to numbers. 
 
 This might be a good complementary lib to https://github.com/savoirfairelinux/num2words
 
-_Currently is doesn't support swiss variant. TBD_
+_Currently is doesn't support swiss variant. TBD_:ch:
 
 # Installation
 
@@ -12,24 +13,32 @@ _Currently is doesn't support swiss variant. TBD_
 
 # Usage
 
-Definition:
-`import zahlwort2num as w2n`
+### _Definition_: <br />
 
-Example: 
- `w2n.convert("zweihundertfünfundzwanzig") # => 225` <br />
- `w2n.convert("neunte") # => '9.'` <br />
- `w2n.convert("minus siebenhundert millionen achtundsiebzig") # => -700000078` <br />
- or even: <br />
- `w2n.convert("sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig"") # => 653521` :tada: 
+```python
+import zahlwort2num as w2n
+```
+
+### _Example_: <br />
+ ```python
+ w2n.convert("Zweihundertfünfundzwanzig") # => 225
+ w2n.convert("neunte") # => '9.' 
+ w2n.convert("minus siebenhundert millionen achtundsiebzig") # => -700000078
+```
+ _or even stuff like:_ <br />
+ ```python
+ w2n.convert("sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig") # => 653521
+```
+ :see_no_evil: 
  
 
 # WIKI
 TBD
 
 # TODO / Known issues
-- [x] Make POC, functional for all common cases
-- [x] Ordinal number support 
-- [x] Take care for exceptions / trailing whitespaces etc.
+- [x] ~~Make POC, functional for all common cases~~
+- [x] ~~Ordinal number support~~
+- [x] ~~Take care for exceptions / trailing whitespaces etc.~~
 - [ ] Make structure + publish as PyPI package
 - [ ] More comprehensible tests
 - [ ] Swiss variant
