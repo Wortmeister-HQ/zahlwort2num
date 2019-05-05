@@ -3,7 +3,7 @@ name = "zahlwort2num"
 def atoml(number):
     if (number == 'null' or number == ''):
         return 0
-    if (number == 'eins' or number == 'ein' or number == 'eine' or number == 'ers'):
+    if (number == 'eins' or number == 'ein' or number == 'eine' or number == 'er'):
         return 1
     if (number == 'zwei'):
         return 2
@@ -83,7 +83,7 @@ def convOrd(number):
     suffList = [True for suffix in sufficies if number.endswith(suffix)]
     if (len(suffList) > 0):
         if number[-2::] == 'te':  # Only possible 2 or 3 letter suffix
-            if (number[-3:-2] == 's'):
+            if (number[-3:-2] == 's'): #TODO: Special case erst
                 valid_nr = number[0:-3]
             else:
                 valid_nr = number[0:-2]
