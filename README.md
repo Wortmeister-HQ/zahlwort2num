@@ -1,4 +1,7 @@
-# zahlwort2num
+# zahlwort2num (v. 0.1.5)
+
+### PyPi direct page of project 
+https://pypi.org/project/zahlwort2num/
 
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for lang_DE) package for handy convertion of german numerals (also ordinal) written as words to numbers. 
@@ -53,3 +56,5 @@ TBD
 - [ ] Few benchmark improvements (e.g tail recursion etc)
 - [ ] Better error handling + validation for idiotical cases (e.g `minus null Miliarde`)
 - [ ] Simplify/refactor POC code, add better documentation
+
+
