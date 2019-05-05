@@ -34,7 +34,8 @@ import zahlwort2num as w2n
 ```
  :see_no_evil: 
  
-#### Command line:[#command-line]
+#### Command line: 
+
 * _(Obviously it is better to use parameter inside apostroph due possible spaces)_
 ```
 bin/zahlwort2num-convert "ein million siebenhunderteinundzwanzig"
