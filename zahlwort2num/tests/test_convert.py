@@ -105,25 +105,25 @@ class TestConverter(TestCase):
         self.assertTrue(w2n.convert('achtundneunzig') == 98)
 
     def test_more_specific(self):
-        words = ["sieben",
-                 "neunundneunzig",
-                 "eintausend",
-                 "zweihunderttausend",
-                 "fünfundvierzighundertvier",
-                 "fünfundvierzighundertelf",
-                 "zweihundertfünfundzwanzig",
-                 "dreitausendsechshundertfünfundzwanzig",
-                 "zwölftausendachthundertvierundfünfzig",
-                 "sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig",
-                 "neunundneunzig",
-                 "fünfhunderttausendzwei",
-                 "eine million viertausend",
-                 "siebenhundert trillion neun milliarde eine million neuntausendeins",
-                 "neun quadrilliarde elf",
-                 "zwei milliarden",
-                 "eintausend",
-                 "null",
-                 "neunundvierzig"
+        words = ['sieben',
+                 'neunundneunzig',
+                 'eintausend',
+                 'zweihunderttausend',
+                 'fünfundvierzighundertvier',
+                 'fünfundvierzighundertelf',
+                 'zweihundertfünfundzwanzig',
+                 'dreitausendsechshundertfünfundzwanzig',
+                 'zwölftausendachthundertvierundfünfzig',
+                 'sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig',
+                 'neunundneunzig',
+                 'fünfhunderttausendzwei',
+                 'eine million viertausend',
+                 'siebenhundert trillion neun milliarde eine million neuntausendeins',
+                 'neun quadrilliarde elf',
+                 'zwei milliarden',
+                 'eintausend',
+                 'null',
+                 'neunundvierzig'
                  ]
 
         numbers = [7, 99, 1000, 200000, 4504, 4511, 225, 3625, 12854, 653521,
@@ -134,21 +134,27 @@ class TestConverter(TestCase):
             self.assertTrue(w2n.convert(word) == numbers[idx])
 
     def test_ordinal_numbers(self):
-        words = ["vierundzwanzigstem", "siebzigste", "siebte", "neunte", "erste", "zwanzigste"]
+        words = ['vierundzwanzigstem', 'siebzigste', 'siebte', 'neunte', 'erste', 'zwanzigste']
         numbers = ['24.', '70.', '7.', '9.', '1.', '20.']
 
         for (idx, word) in enumerate(words):
             self.assertTrue(w2n.convert(word) == numbers[idx])
 
     def test_negative_values(self):
-        words = ["minus eine million",
-                 "minus dreizehn",
-                 "minus siebenhundert millionen achtundsiebzig",
-                 "minus elf"]
+        words = ['minus eine million',
+                 'minus dreizehn',
+                 'minus siebenhundert millionen achtundsiebzig',
+                 'minus elf']
 
         numbers = [-1000000, -13, -700000078, -11]
 
         for (idx, word) in enumerate(words):
             self.assertTrue(w2n.convert(word) == numbers[idx])
 
+    def test_negative_with_ordinal(self):
+        words = ['minus erste', 'minus zweiundneunzigstem']
 
+        numbers = ['-1.', '-92.']
+
+        for (idx, word) in enumerate(words):
+            self.assertTrue(w2n.convert(word) == numbers[idx])
