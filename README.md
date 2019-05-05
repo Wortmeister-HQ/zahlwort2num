@@ -35,12 +35,21 @@ import zahlwort2num as w2n
  :see_no_evil: 
  
 #### Command line
+[#command-line]
 * _(Obviously it is better to use parameter inside apostroph due possible spaces)_
 ```
 bin/zahlwort2num-convert "ein million siebenhunderteinundzwanzig"
 ```
 # WIKI
 TBD
+
+# Already implemented features :sunglasses:
+* Theoretically works for any number from range 0 upto 999 * 10^1027 [big numbers]
+* Command-line mode ([see](#command-line) above)
+* Supported with ordinal numerals (incl. inflections [sufficies like `'ste', 'ten'` etc. ])<br />
+  _In this case it returns coerced __String__ type value e.g '15.' instead of __Integer___ :point_up: 
+* Relative mild rules in terms of trailing whitespaces, lower/upper-case (unification).
+* Handling of signed numerals (including ordinal ones) e.g `'minus zehn'`
 
 # TODO / Known issues
 - [x] ~~Make POC, functional for all common cases~~
@@ -56,5 +65,6 @@ TBD
 - [ ] Few benchmark improvements (e.g tail recursion etc)
 - [ ] Better error handling + validation for idiotical cases (e.g `minus null Miliarde`)
 - [ ] Simplify/refactor POC code, add better documentation
+- [ ] Fractions?
 
 
