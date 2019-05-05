@@ -1,14 +1,14 @@
 # zahlwort2num (v. 0.1.5)
 
-### PyPi direct page of project 
-https://pypi.org/project/zahlwort2num/
-
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for lang_DE) package for handy convertion of german numerals (also ordinal) written as words to numbers. 
 
 This might be a good complementary lib to https://github.com/savoirfairelinux/num2words
 
 :crying_cat_face: _Currently is doesn't support swiss variant. TBD_ :switzerland:
+
+# PyPi direct page of project 
+https://pypi.org/project/zahlwort2num/
 
 # Installation
 
