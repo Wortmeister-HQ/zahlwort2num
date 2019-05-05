@@ -31,7 +31,11 @@ import zahlwort2num as w2n
 ```
  :see_no_evil: 
  
-
+#### Command line
+* _(Obviously it is better to use parameter inside apostroph due possible spaces)_
+```
+bin/zahlwort2num-convert "ein million siebenhunderteinundzwanzig"
+```
 # WIKI
 TBD
 
@@ -39,8 +43,8 @@ TBD
 - [x] ~~Make POC, functional for all common cases~~
 - [x] ~~Ordinal number support~~
 - [x] ~~Take care for exceptions / trailing whitespaces etc.~~
-- [ ] Make structure + publish as PyPI package
-- [ ] Command line support :computer:
+- [x] ~~Make structure + publish as PyPI package~~
+- [x] Command line support :computer:
 - [ ] More comprehensible tests
 - [ ] Swiss variant
 - [ ] More fault tolerant (ß -> ss) etc

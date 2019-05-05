@@ -73,10 +73,6 @@ convt2 = lambda number: mult(number, 'tausend', 1000, convh2)
 convh2 = lambda number: mult(number, 'hundert', 100, convu2)
 convu2 = lambda number: mult(number, 'und', 1, atoml)
 
-
-# ----
-
-
 def convOrd(number):
     # dritte, vierte
     sufficies = ['te', 'ter', 'tes', 'tem', 'ten']
