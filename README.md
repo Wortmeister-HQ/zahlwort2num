@@ -5,7 +5,7 @@ A small but useful (due shortage of/low quality support for lang_DE) package for
 
 This might be a good complementary lib to https://github.com/savoirfairelinux/num2words
 
-:crying_cat_face: _Currently is doesn't support swiss variant. TBD_ :ch:
+:crying_cat_face: _Currently is doesn't support swiss variant. TBD_ :switzerland:
 
 # Installation
 
@@ -40,6 +40,7 @@ TBD
 - [x] ~~Ordinal number support~~
 - [x] ~~Take care for exceptions / trailing whitespaces etc.~~
 - [ ] Make structure + publish as PyPI package
+- [ ] Command line support :computer:
 - [ ] More comprehensible tests
 - [ ] Swiss variant
 - [ ] More fault tolerant (ß -> ss) etc
