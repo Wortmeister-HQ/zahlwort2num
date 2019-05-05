@@ -1,4 +1,4 @@
-# zahlwort2num (v. 0.1.5)
+# zahlwort2num (v. 0.1.6)
 
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for lang_DE) package for handy convertion of german numerals (also ordinal) written as words to numbers. So it converts words to numbers.
