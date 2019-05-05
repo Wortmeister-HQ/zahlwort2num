@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="zahlwort2num",
-    version="0.1.2",
+    version="0.1.5",
     author="Piotr Walkowski",
     author_email="piotr@deluxe-soft.com",
     description="A small package for handy conversion of german numerals (also ordinal / signed) written as words to numbers.",
@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/walu2/zahlwort2num",
     packages=setuptools.find_packages(),
-    keywords='funniest joke comedy flying circus',
+    keywords='german nlp numeral converter deutsch ordinal zahl number',
     install_requires=[
           'markdown',
     ],
@@ -23,7 +23,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-        "Topic :: Text Processing :: Linguistic :: German",
+        "Topic :: Text Processing :: Linguistic",
     ],
     test_suite='nose.collector',
     tests_require=['nose'],
