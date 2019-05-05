@@ -130,46 +130,10 @@ def ordBn(number):
     return ordWithBN(number, 0)
 
 
-def conv(number):
+def convert(number):
     number = number.lower().strip()
     if (number.startswith('minus')):
         num_withhout_minus = number.replace('minus ', '');
         return (-1) * ordBn(num_withhout_minus)
     else:
         return ordBn(number)
-
-'''
-args = ["sieben",
-        "neunundneunzig",
-        "eintausend",
-        "zweihunderttausend",
-        "fünfundvierzighundertvier",
-        "fünfundvierzighundertelf",
-        "zweihundertfünfundzwanzig",  # 225
-        "dreitausendsechshundertfünfundzwanzig",  # 3625
-        "zwölftausendachthundertvierundfünfzig",  # 12854
-        "sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig",  # 653521
-        "vierundzwanzigstem",
-        "siebzigste",
-        "neunundneunzig",
-        "fünfhunderttausendzwei",
-        "eine million viertausend",
-        "siebenhundert trillion neun milliarde eine million neuntausendeins",
-        "neun quadrilliarde elf",
-        "zwei milliarden",
-        "eintausend",
-        "minus eine million",
-        "minus dreizehn",
-        "minus siebenhundert millionen achtundsiebzig",
-        "minus elf",
-        "null",
-        "siebte",
-        "neunte",
-        "erste",
-        "zwanzigste",
-        "neunundvierzig"
-        ]
-
-for arg in args:
-    print("%s -> %s" % (arg, conv(arg)))
-'''
