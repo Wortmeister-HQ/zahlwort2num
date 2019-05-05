@@ -26,7 +26,7 @@ import zahlwort2num as w2n
  ```python
  w2n.convert("Zweihundertfünfundzwanzig") # => 225
  w2n.convert("neunte") # => '9.' 
- w2n.convert("minus siebenhundert millionen achtundsiebzig") # => -700000078
+ w2n.convert("minus siebenhundert Millionen achtundsiebzig") # => -700000078
 ```
  _or even stuff like:_ <br />
  ```python
@@ -38,7 +38,7 @@ import zahlwort2num as w2n
 
 * _(Obviously it is better to use parameter inside apostroph due possible spaces)_
 ```
-bin/zahlwort2num-convert "ein million siebenhunderteinundzwanzig"
+bin/zahlwort2num-convert "eine Million siebenhunderteinundzwanzig"
 ```
 # WIKI
 TBD
