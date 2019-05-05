@@ -27,4 +27,8 @@ setuptools.setup(
     ],
     test_suite='nose.collector',
     tests_require=['nose'],
+    scripts=['bin/zahlwort2num-convert'],
+    entry_points = {
+        'console_scripts': ['zahlwort2num-covert=zahlwort2num.command_line:main'],
+    }
 )
