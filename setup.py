@@ -13,11 +13,16 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/walu2/zahlwort2num",
     packages=setuptools.find_packages(),
+    keywords='funniest joke comedy flying circus',
+    install_requires=[
+          'markdown',
+    ],
     zip_safe = False,
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Topic :: Text Processing :: Linguistic :: German",
     ],
 )
-
