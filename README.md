@@ -5,7 +5,7 @@ A small but useful (due shortage of/low quality support for lang_DE) package for
 
 This might be a good complementary lib to https://github.com/savoirfairelinux/num2words
 
-:crying_cat_face: _Currently is doesn't support swiss variant. TBD :ch:
+:crying_cat_face: _Currently is doesn't support swiss variant. TBD_ :ch:
 
 # Installation
 
