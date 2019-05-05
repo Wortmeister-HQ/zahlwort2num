@@ -25,4 +25,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Topic :: Text Processing :: Linguistic :: German",
     ],
+    test_suite='nose.collector',
+    tests_require=['nose'],
 )
