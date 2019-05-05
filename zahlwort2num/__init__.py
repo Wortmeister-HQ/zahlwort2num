@@ -132,8 +132,14 @@ def ordBn(number):
 
 def convert(number):
     number = number.lower().strip()
-    if (number.startswith('minus')):
-        num_withhout_minus = number.replace('minus ', '');
-        return (-1) * ordBn(num_withhout_minus)
+    if number.startswith('minus'):
+        num_without_minus = number.replace('minus ', '')
+        res = ordBn(num_without_minus)
+        if isinstance(res, int):
+            return (-1) * res  # No type coertion ;)
+        elif isinstance(res, str):
+            return "-%s" % res
+        else:
+            raise ValueError('Bad datatype returned. Possibly wrong string has been provided')
     else:
         return ordBn(number)
