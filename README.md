@@ -16,13 +16,10 @@ Definition:
 `import zahlwort2num as w2n`
 
 Example: 
-
- `w2n.convert("zweihundertfünfundzwanzig") # => 225`
- 
- `w2n.convert("neunte") # => '9.'`
- 
- `w2n.convert("minus siebenhundert millionen achtundsiebzig") # => -700000078`
- or even
+ `w2n.convert("zweihundertfünfundzwanzig") # => 225` <br />
+ `w2n.convert("neunte") # => '9.'` <br />
+ `w2n.convert("minus siebenhundert millionen achtundsiebzig") # => -700000078` <br />
+ or even: <br />
  `w2n.convert("sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig"") # => 653521` :tada: 
  
 
