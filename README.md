@@ -1,11 +1,13 @@
 # zahlwort2num (v. 0.1.6)
 
 :de: :de: :de:
-A small but useful (due shortage of/low quality support for lang_DE) package for handy convertion of german numerals (also ordinal) written as words to numbers. So it converts words to numbers.
+A small but useful (due shortage of/low quality support for lang_DE) package for handy conversion of german numerals (incl. ordinal number) written as string to the from numbers. 
 
-This might be a good complementary lib to https://github.com/savoirfairelinux/num2words
+To put it differently it allows: rnverse text normalization for numbers. 
 
-:crying_cat_face: _Currently is doesn't support Swiss variant. TBD_ :switzerland:
+This package might be a good complementary lib to https://github.com/savoirfairelinux/num2words
+
+:crying_cat_face: _Currently is doesn't support swiss variant. TBD_ :switzerland:
 
 # PyPi direct page of project 
 https://pypi.org/project/zahlwort2num/
@@ -36,7 +38,7 @@ import zahlwort2num as w2n
  
 #### Command line: 
 
-* _(Obviously it is better to use parameter inside apostroph due possible spaces)_
+* _(Obviously it is better to use a parameter enclosed with apostrophs due to possible spaces)_
 ```
 bin/zahlwort2num-convert "eine Million siebenhunderteinundzwanzig"
 ```
@@ -44,12 +46,12 @@ bin/zahlwort2num-convert "eine Million siebenhunderteinundzwanzig"
 TBD
 
 # Already implemented features :sunglasses:
-* Theoretically works for any number from range 0 upto 999 * 10^1027 [big numbers]
+* Theoretically it works for any numbers from range 0 upto 999 * 10^27 [big numbers]
 * Command-line mode ([see](#command-line) above)
 * Supported with ordinal numerals (incl. inflections [sufficies like `'ste', 'ten'` etc. ])<br />
   _In this case it returns coerced __String__ type value e.g '15.' instead of __Integer___ :point_up: 
 * Relative mild rules in terms of trailing whitespaces, lower/upper-case (unification).
-* Handling of signed numerals (including ordinal ones) e.g `'minus zehn'`
+* Handling of signed numerals (also ordinal ones) e.g `'minus zehn'`
 
 # TODO / Known issues
 - [x] ~~Make POC, functional for all common cases~~
