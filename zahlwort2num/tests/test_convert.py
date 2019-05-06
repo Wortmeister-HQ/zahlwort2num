@@ -2,7 +2,6 @@ from unittest import TestCase
 
 import zahlwort2num as w2n
 
-
 class TestConverter(TestCase):
     def test_hardcoded_values_upto_100(self):
         self.assertTrue(w2n.convert('eins') == 1)
@@ -161,6 +160,14 @@ class TestConverter(TestCase):
 
     def test_swiss_variant(self):
         word = 'dreissig'
-        number = 13
+        number = 30
 
         self.assertTrue(w2n.convert(word) == number)
+
+
+    def test_yet_another_ordinal_edge_case(self):
+        words = ['sieben', 'siebte', 'siebten'];
+        numbers = [7, '7.', '7.']
+
+        for (idx, word) in enumerate(words):
+            self.assertTrue(w2n.convert(word) == numbers[idx])
