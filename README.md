@@ -3,7 +3,7 @@
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for lang_DE) package for handy conversion of german numerals (incl. ordinal number) written as string to the from numbers. 
 
-To put it differently it allows: rnverse text normalization for numbers. 
+To put it differently: _It allows reverse text normalization for numbers._
 
 This package might be a good complementary lib to https://github.com/savoirfairelinux/num2words
 
