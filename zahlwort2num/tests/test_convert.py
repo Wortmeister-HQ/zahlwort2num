@@ -158,3 +158,9 @@ class TestConverter(TestCase):
 
         for (idx, word) in enumerate(words):
             self.assertTrue(w2n.convert(word) == numbers[idx])
+
+    def test_swiss_variant(self):
+        word = 'dreissig'
+        number = 13
+
+        self.assertTrue(w2n.convert(word) == number)

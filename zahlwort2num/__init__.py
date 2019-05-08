@@ -43,7 +43,7 @@ def atoml(number):
         return 19
     if (number == 'zwanzig'):
         return 20
-    if (number == 'dreißig'):
+    if (number == 'dreißig' or number == 'dreissig'):
         return 30
     if (number == 'vierzig'):
         return 40
