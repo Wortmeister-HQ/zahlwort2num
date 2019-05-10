@@ -1,62 +1,43 @@
 name = "zahlwort2num"
 
-def atoml(number):
-    if (number == 'null' or number == ''):
-        return 0
-    if (number == 'eins' or number == 'ein' or number == 'eine' or number == 'er'):
-        return 1
-    if (number == 'zwei'):
-        return 2
-    if (number == 'drei' or number == 'drit'):
-        return 3
-    if (number == 'vier'):
-        return 4
-    if (number == 'fünf'):
-        return 5
-    if (number == 'sechs'):
-        return 6
-    if (number == 'sieben' or number == 'sieb'):
-        return 7
-    if (number == 'acht'):
-        return 8
-    if (number == 'neun'):
-        return 9
-    if (number == 'zehn'):
-        return 10
-    if (number == 'elf'):
-        return 11
-    if (number == 'zwölf'):
-        return 12
-    if (number == 'dreizehn'):
-        return 13
-    if (number == 'vierzehn'):
-        return 14
-    if (number == 'fünfzehn'):
-        return 15
-    if (number == 'sechzehn'):
-        return 16
-    if (number == 'siebzehn'):
-        return 17
-    if (number == 'achtzehn'):
-        return 18
-    if (number == 'neunzehn'):
-        return 19
-    if (number == 'zwanzig'):
-        return 20
-    if (number == 'dreißig' or number == 'dreissig'):
-        return 30
-    if (number == 'vierzig'):
-        return 40
-    if (number == 'fünfzig'):
-        return 50
-    if (number == 'sechzig'):
-        return 60
-    if (number == 'siebzig'):
-        return 70
-    if (number == 'achtzig'):
-        return 80
-    if (number == 'neunzig'):
-        return 90
+CONST_NUMS = {
+    '': 0,
+    'null': 0,
+    'ein': 1,
+    'eins': 1,
+    'eine': 1,
+    'er': 1,
+    'zwei': 2,
+    'drei': 3,
+    'drit': 3,
+    'vier': 4,
+    u'fünf': 5,
+    'sechs': 6,
+    'sieben': 7,
+    'sieb': 7,
+    'acht': 8,
+    'neun': 9,
+    'zehn': 10,
+    'elf': 11,
+    u'zwölf': 12,
+    'dreizehn': 13,
+    'vierzehn': 14,
+    'fünfzehn': 15,
+    'sechzehn': 16,
+    'siebzehn': 17,
+    'achtzehn': 18,
+    'neunzehn': 19,
+    'zwanzig': 20,
+    u'dreißig': 30,
+    'dreissig': 30,
+    'vierzig': 40,
+    u'fünfzig': 50,
+    'sechzig': 60,
+    'siebzig': 70,
+    'achtzig': 80,
+    'neunzig': 90
+}
+
 
 def mult(number, splitter, factor, fun):
     spliter = number.split(splitter)
@@ -71,7 +52,7 @@ def mult(number, splitter, factor, fun):
 
 convt2 = lambda number: mult(number, 'tausend', 1000, convh2)
 convh2 = lambda number: mult(number, 'hundert', 100, convu2)
-convu2 = lambda number: mult(number, 'und', 1, atoml)
+convu2 = lambda number: mult(number, 'und', 1, lambda word: CONST_NUMS[word])
 
 def convOrd(number):
     # dritte, vierte
