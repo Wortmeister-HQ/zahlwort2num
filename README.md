@@ -1,4 +1,4 @@
-# zahlwort2num (v. 0.2.0)
+# zahlwort2num (v.0.2.0)
 
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for lang_DE) package for handy conversion of german numerals (incl. ordinal number) written as string to the from numbers. 
@@ -67,6 +67,6 @@ TBD
 - [ ] Few benchmark improvements (e.g tail recursion etc)
 - [ ] Better error handling + validation for idiotical cases (e.g `minus null Miliarde`)
 - [ ] Simplify/refactor POC code, add better documentation
-- [ ] Fractions?
+- [ ] Support for fractions?
 
 
