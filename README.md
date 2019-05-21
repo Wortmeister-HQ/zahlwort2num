@@ -26,13 +26,13 @@ import zahlwort2num as w2n
 
 ### _Example_: <br />
  ```python
- w2n.convert("Zweihundertfünfundzwanzig") # => 225
- w2n.convert("neunte") # => '9.' 
- w2n.convert("minus siebenhundert Millionen achtundsiebzig") # => -700000078
+ w2n.convert('Zweihundertfünfundzwanzig') # => 225
+ w2n.convert('neunte') # => '9.' 
+ w2n.convert('minus siebenhundert Millionen achtundsiebzig') # => -700000078
 ```
  _or even stuff like:_ <br />
  ```python
- w2n.convert("sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig") # => 653521
+ w2n.convert('sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig') # => 653521
 ```
  :see_no_evil: 
  
@@ -40,7 +40,7 @@ import zahlwort2num as w2n
 
 * _(Obviously it is better to use a parameter enclosed with apostrophs due to possible spaces)_
 ```
-bin/zahlwort2num-convert "eine Million siebenhunderteinundzwanzig"
+bin/zahlwort2num-convert 'eine Million siebenhunderteinundzwanzig'
 ```
 # WIKI
 TBD
