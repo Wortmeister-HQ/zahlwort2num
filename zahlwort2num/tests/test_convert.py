@@ -155,8 +155,8 @@ class TestConverter(TestCase):
 
 
     def test_swiss_variant(self):
-        words = 'dreissig'
-        numbers = 30
+        words = ['dreissig']
+        numbers = [30]
 
         self.compare_sets(numbers, words)
 
