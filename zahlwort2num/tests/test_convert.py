@@ -129,15 +129,13 @@ class TestConverter(TestCase):
                    99, 500002, 1004000, 700000000009001009001, 9000000000000000000000000011,
                    2000000000, 1000, 0, 49]
 
-        for (idx, word) in enumerate(words):
-            self.assertTrue(w2n.convert(word) == numbers[idx])
+        self.compare_sets(numbers, words)
 
     def test_ordinal_numbers(self):
         words = ['vierundzwanzigstem', 'siebzigste', 'siebte', 'neunte', 'erste', 'zwanzigste']
         numbers = ['24.', '70.', '7.', '9.', '1.', '20.']
 
-        for (idx, word) in enumerate(words):
-            self.assertTrue(w2n.convert(word) == numbers[idx])
+        self.compare_sets(numbers, words)
 
     def test_negative_values(self):
         words = ['minus eine million',
@@ -147,14 +145,16 @@ class TestConverter(TestCase):
 
         numbers = [-1000000, -13, -700000078, -11]
 
-        for (idx, word) in enumerate(words):
-            self.assertTrue(w2n.convert(word) == numbers[idx])
+        self.compare_sets(numbers, words)
 
     def test_negative_with_ordinal(self):
         words = ['minus erste', 'minus zweiundneunzigstem']
 
         numbers = ['-1.', '-92.']
 
+        self.compare_sets(numbers, words)
+
+    def compare_sets(self, numbers, words):
         for (idx, word) in enumerate(words):
             self.assertTrue(w2n.convert(word) == numbers[idx])
 
@@ -169,5 +169,4 @@ class TestConverter(TestCase):
         words = ['sieben', 'siebte', 'siebten'];
         numbers = [7, '7.', '7.']
 
-        for (idx, word) in enumerate(words):
-            self.assertTrue(w2n.convert(word) == numbers[idx])
+        self.compare_sets(numbers, words)
