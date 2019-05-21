@@ -149,20 +149,16 @@ class TestConverter(TestCase):
 
     def test_negative_with_ordinal(self):
         words = ['minus erste', 'minus zweiundneunzigstem']
-
         numbers = ['-1.', '-92.']
 
         self.compare_sets(numbers, words)
 
-    def compare_sets(self, numbers, words):
-        for (idx, word) in enumerate(words):
-            self.assertTrue(w2n.convert(word) == numbers[idx])
 
     def test_swiss_variant(self):
-        word = 'dreissig'
-        number = 30
+        words = 'dreissig'
+        numbers = 30
 
-        self.assertTrue(w2n.convert(word) == number)
+        self.compare_sets(numbers, words)
 
 
     def test_yet_another_ordinal_edge_case(self):
@@ -170,3 +166,8 @@ class TestConverter(TestCase):
         numbers = [7, '7.', '7.']
 
         self.compare_sets(numbers, words)
+
+
+    def compare_sets(self, numbers, words):
+        for (idx, word) in enumerate(words):
+            self.assertTrue(w2n.convert(word) == numbers[idx])
