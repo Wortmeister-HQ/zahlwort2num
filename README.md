@@ -1,4 +1,4 @@
-# zahlwort2num (v.0.2.0)
+# zahlwort2num (v.0.2.1)
 
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for lang_DE) package for handy conversion of german numerals (incl. ordinal number) written as string to the from numbers. 
