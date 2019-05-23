@@ -30,11 +30,12 @@ import zahlwort2num as w2n
  w2n.convert('neunte') # => '9.' 
  w2n.convert('minus siebenhundert Millionen achtundsiebzig') # => -700000078
 ```
- _or even stuff like:_ <br />
+ _or even stuff like:_  :see_no_evil:  <br />
  ```python
  w2n.convert('sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig') # => 653521
 ```
- :see_no_evil: 
+![Makarena meme](https://lh6.googleusercontent.com/kl7x0Q_OJUmvDpR_5eND1_Wi-HAMDwF3-c33E9VWLIBtuDqeFsA7POVOik3u_bVllHUxtmlEPO4bGzS3C4CN=w2706-h1466)
+
  
 #### Command line: 
 
