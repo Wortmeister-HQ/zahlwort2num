@@ -1,4 +1,4 @@
-# zahlwort2num (v.0.2.1)
+# ZahlWort2num (v.0.2.1)
 
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for `lang_de`) package for handy conversion of german numerals (incl. ordinal number) written as string to the from numbers. 
@@ -24,7 +24,7 @@ https://pypi.org/project/zahlwort2num/
 import zahlwort2num as w2n
 ```
 
-### _Example_: <br />
+### _Few examples_: <br />
  ```python
  w2n.convert('Zweihundertfünfundzwanzig') # => 225
  w2n.convert('neunte') # => '9.' 
