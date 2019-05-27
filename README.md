@@ -34,8 +34,6 @@ import zahlwort2num as w2n
  ```python
  w2n.convert('sechshundertdreiundfünfzigtausendfünfhunderteinundzwanzig') # => 653521
 ```
-![Makarena meme](https://lh6.googleusercontent.com/kl7x0Q_OJUmvDpR_5eND1_Wi-HAMDwF3-c33E9VWLIBtuDqeFsA7POVOik3u_bVllHUxtmlEPO4bGzS3C4CN=w2706-h1466)
-
  
 #### Command line: 
 
