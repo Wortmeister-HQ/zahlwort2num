@@ -103,6 +103,9 @@ class TestConverter(TestCase):
         self.assertTrue(w2n.convert('siebenundneunzig') == 97)
         self.assertTrue(w2n.convert('achtundneunzig') == 98)
         self.assertTrue(w2n.convert('einhundert') == 100)
+
+    def test_bugs_found_by_users(self):
+        self.assertTrue(w2n.convert('hundertdreiundzwanzig') == 123) # Kudos to @warichet for finding this
         self.assertTrue(w2n.convert('hundert') == 100)
         self.assertTrue(w2n.convert('tausend') == 1000)
 
