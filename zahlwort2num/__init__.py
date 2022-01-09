@@ -53,6 +53,8 @@ class ZahlConverter:
         spliter = number.split(splitter)
         lenSplt = len(spliter)
         if lenSplt == 2:
+            if splitter != 'und' and not spliter[0]:
+              return factor +  fun(spliter[1])
             return fun(spliter[0]) * factor + fun(spliter[1])
         elif lenSplt == 1:
             return fun(spliter[0])
