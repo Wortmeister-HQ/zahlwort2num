@@ -102,6 +102,9 @@ class TestConverter(TestCase):
         self.assertTrue(w2n.convert('sechsundneunzig') == 96)
         self.assertTrue(w2n.convert('siebenundneunzig') == 97)
         self.assertTrue(w2n.convert('achtundneunzig') == 98)
+        self.assertTrue(w2n.convert('einhundert') == 100)
+        self.assertTrue(w2n.convert('hundert') == 100)
+        self.assertTrue(w2n.convert('tausend') == 1000)
 
     def test_more_specific(self):
         words = ['sieben',
