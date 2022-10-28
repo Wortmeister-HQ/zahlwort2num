@@ -1,4 +1,4 @@
-# ZahlWort2num (v.0.4.0)
+# ZahlWort2num (v.0.4.2)
 
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for `lang_de`) package for handy conversion of german numerals (incl. ordinal number) written as string to the from numbers. 
@@ -41,6 +41,22 @@ import zahlwort2num as w2n
 ```
 bin/zahlwort2num-convert 'eine Million siebenhunderteinundzwanzig'
 ```
+
+# Development
+Before doing anything. Install flake8 locally by 
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Make sure tests are passing 
+```bash
+python3 -m unittest
+```
+and you locally run linter via
+```bash
+flake8 ./zahlwort2num/*.py --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+```
+
 # WIKI
 TBD
 
@@ -61,6 +77,7 @@ TBD
 - [x] ~~Added support for both non-direct usage e.g einhundert / hundert~~
 - [x] ~~Simplify/refactor POC code, add better documentation~~
 - [x] ~~Zwo variant~~
+- [x] ~~Added linter with Test Suite as hook~~
 - [ ] More comprehensible tests
 - [ ] Swiss variant
 - [ ] More fault tolerant (ß -> ss) etc

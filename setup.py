@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='zahlwort2num',
-    version='0.4.0',
+    version='0.4.2',
     author='Piotr Walkowski',
     author_email='piotr@deluxe-soft.com',
     description='A small package for handy conversion of german numerals (also ordinal / signed) written as words to numbers.',
@@ -17,7 +17,7 @@ setuptools.setup(
     install_requires=[
           'markdown',
     ],
-    zip_safe = False,
+    zip_safe=False,
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 3',
@@ -28,7 +28,7 @@ setuptools.setup(
     test_suite='nose.collector',
     tests_require=['nose'],
     scripts=['bin/zahlwort2num-convert'],
-    entry_points = {
+    entry_points={
         'console_scripts': ['zahlwort2num-covert=zahlwort2num.command_line:main'],
     }
 )

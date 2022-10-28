@@ -2,6 +2,7 @@ from unittest import TestCase
 
 import zahlwort2num as w2n
 
+
 class TestConverter(TestCase):
     def test_hardcoded_values_upto_100(self):
         self.assertTrue(w2n.convert('eins') == 1)
@@ -106,7 +107,8 @@ class TestConverter(TestCase):
         self.assertTrue(w2n.convert('einhundert') == 100)
 
     def test_bugs_found_by_users(self):
-        self.assertTrue(w2n.convert('hundertdreiundzwanzig') == 123) # Kudos to @warichet for finding this
+        self.assertTrue(w2n.convert('hundertdreiundzwanzig') == 123)
+        # Kudos to @warichet for finding this
         self.assertTrue(w2n.convert('hundert') == 100)
         self.assertTrue(w2n.convert('tausend') == 1000)
 
@@ -162,20 +164,17 @@ class TestConverter(TestCase):
 
         self.compare_sets(numbers, words)
 
-
     def test_swiss_variant(self):
         words = ['dreissig']
         numbers = [30]
 
         self.compare_sets(numbers, words)
 
-
     def test_yet_another_ordinal_edge_case(self):
-        words = ['sieben', 'siebte', 'siebten'];
+        words = ['sieben', 'siebte', 'siebten']
         numbers = [7, '7.', '7.']
 
         self.compare_sets(numbers, words)
-
 
     def compare_sets(self, numbers, words):
         for (idx, word) in enumerate(words):
