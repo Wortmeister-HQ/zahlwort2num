@@ -12,6 +12,7 @@ class ZahlConverter:
         'eine': 1,
         'er': 1,
         'zwei': 2,
+        'zwo': 2,
         'drei': 3,
         'drit': 3,
         'vier': 4,
