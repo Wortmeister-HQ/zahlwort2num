@@ -75,5 +75,5 @@ TBD
 # Thanks 
 - @warichet for addressing problem 
 - @spatialbitz for writing simple fix :+1:
-- @psawa - adding support for zwo case
+- @psawa - adding support for `zwo` case
 - ... lastly to any of you who uses this package ;-) 
