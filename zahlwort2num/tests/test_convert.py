@@ -6,6 +6,7 @@ class TestConverter(TestCase):
     def test_hardcoded_values_upto_100(self):
         self.assertTrue(w2n.convert('eins') == 1)
         self.assertTrue(w2n.convert('zwei') == 2)
+        self.assertTrue(w2n.convert('zwo') == 2)
         self.assertTrue(w2n.convert('drei') == 3)
         self.assertTrue(w2n.convert('vier') == 4)
         self.assertTrue(w2n.convert('fünf') == 5)
@@ -128,12 +129,14 @@ class TestConverter(TestCase):
                  'zwei milliarden',
                  'eintausend',
                  'null',
-                 'neunundvierzig'
+                 'neunundvierzig',
+                 'zwohundertzwoundzwanzig',
+                 'zwotausend'
                  ]
 
         numbers = [7, 99, 1000, 200000, 4504, 4511, 225, 3625, 12854, 653521,
                    99, 500002, 1004000, 700000000009001009001, 9000000000000000000000000011,
-                   2000000000, 1000, 0, 49]
+                   2000000000, 1000, 0, 49, 222, 2000]
 
         self.compare_sets(numbers, words)
 
