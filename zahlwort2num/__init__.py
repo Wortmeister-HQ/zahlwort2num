@@ -2,6 +2,7 @@ from argparse import ArgumentError
 
 name = 'zahlwort2num'
 
+
 class ZahlConverter:
 
     CONST_NUMS = {
@@ -49,19 +50,17 @@ class ZahlConverter:
     SCALES = ['million', 'milliarde', 'billion', 'billiarde', 'trillion', 'trilliarde', 'quadrillion', 'quadrilliarde']
     MAX_SC = len(SCALES)
 
-
     def mult(self, number, splitter, factor, fun):
         spliter = number.split(splitter)
         lenSplt = len(spliter)
         if lenSplt == 2:
             if splitter != 'und' and not spliter[0]:
-              return factor +  fun(spliter[1])
+                return factor + fun(spliter[1])
             return fun(spliter[0]) * factor + fun(spliter[1])
         elif lenSplt == 1:
             return fun(spliter[0])
         else:
             raise ArgumentError('Given input cannot be properly parsed. Please double check if it has proper structure.')
-
 
     def convOrd(self, number):
         # dritte, vierte
@@ -104,10 +103,8 @@ class ZahlConverter:
         else:
             return self.ordWithBN(number, idx + 1)
 
-
     def ordBn(self, number):
         return self.ordWithBN(number, 0)
-
 
     def convert(self):
         number = self.trimmedText()
@@ -132,6 +129,7 @@ class ZahlConverter:
         self.convu2 = lambda number: self.mult(number, 'und', 1, lambda word: self.CONST_NUMS[word])
 
         self.number = number
+
 
 def convert(number):
     c = ZahlConverter(number)

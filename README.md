@@ -41,6 +41,22 @@ import zahlwort2num as w2n
 ```
 bin/zahlwort2num-convert 'eine Million siebenhunderteinundzwanzig'
 ```
+
+# Development
+Before doing anything. Install flake8 locally by 
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Make sure tests are passing 
+```bash
+python3 -m unittest
+```
+and you locally run linter via
+```bash
+flake8 ./zahlwort2num/*.py --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+```
+
 # WIKI
 TBD
 
