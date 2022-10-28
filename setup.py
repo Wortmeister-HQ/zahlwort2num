@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='zahlwort2num',
-    version='0.3.0',
+    version='0.4.0',
     author='Piotr Walkowski',
     author_email='piotr@deluxe-soft.com',
     description='A small package for handy conversion of german numerals (also ordinal / signed) written as words to numbers.',

@@ -1,4 +1,4 @@
-# ZahlWort2num (v.0.3.0)
+# ZahlWort2num (v.0.4.0)
 
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for `lang_de`) package for handy conversion of german numerals (incl. ordinal number) written as string to the from numbers. 
@@ -60,6 +60,7 @@ TBD
 - [x] ~~Command line support :computer:~~
 - [x] ~~Added support for both non-direct usage e.g einhundert / hundert~~
 - [x] ~~Simplify/refactor POC code, add better documentation~~
+- [x] ~~Zwo variant~~
 - [ ] More comprehensible tests
 - [ ] Swiss variant
 - [ ] More fault tolerant (ß -> ss) etc
@@ -74,4 +75,5 @@ TBD
 # Thanks 
 - @warichet for addressing problem 
 - @spatialbitz for writing simple fix :+1:
+- @psawa - adding support for zwo case
 - ... lastly to any of you who uses this package ;-) 
