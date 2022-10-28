@@ -1,4 +1,4 @@
-# ZahlWort2num (v.0.4.0)
+# ZahlWort2num (v.0.4.2)
 
 :de: :de: :de:
 A small but useful (due shortage of/low quality support for `lang_de`) package for handy conversion of german numerals (incl. ordinal number) written as string to the from numbers. 
@@ -77,6 +77,7 @@ TBD
 - [x] ~~Added support for both non-direct usage e.g einhundert / hundert~~
 - [x] ~~Simplify/refactor POC code, add better documentation~~
 - [x] ~~Zwo variant~~
+- [x] ~~Added linter with Test Suite as hook~~
 - [ ] More comprehensible tests
 - [ ] Swiss variant
 - [ ] More fault tolerant (ß -> ss) etc
