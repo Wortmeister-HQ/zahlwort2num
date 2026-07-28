@@ -12,6 +12,7 @@ class ZahlConverter:
         'eins': 1,
         'eine': 1,
         'er': 1,
+        'ers': 1,
         'zwei': 2,
         'zwo': 2,
         'drei': 3,
@@ -100,9 +101,6 @@ class ZahlConverter:
                     if suffix == 'e':
                         # Special case for ordinals ending with 'e' (like 'achte')
                         base_number = number[:-1]
-                    elif suffix == 'te' and len(number) > 3 and number[-3] == 's':
-                        # Special case for ordinals like 'erste' -> 'erst' + 'e' but we have 'erste' -> 'er'
-                        base_number = number[:-3]
                     elif suffix == 'te':
                         # For 'te' suffix, remove 'te' and check if we need to remove more
                         base_number = number[:-2]
